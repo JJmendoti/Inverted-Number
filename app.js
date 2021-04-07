@@ -37,11 +37,9 @@ function inverted() {
         console.log('----------------------------------------');
     } else {
         while (parseInt(number / 10) != 0) {
-            console.log("El número ingresado es:" +  number + " % 10 = " + (number % 10));
             document.getElementById("result").innerHTML += (number % 10);
             number = parseInt(number / 10);
             if (parseInt(number / 10) == 0) {
-                console.log("\n Modulo del Último número:" + (number % 10));
                 document.getElementById("result").innerHTML += (number % 10);
                 document.getElementById("result").innerHTML += "     ";
             }
